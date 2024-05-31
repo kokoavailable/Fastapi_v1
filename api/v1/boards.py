@@ -64,6 +64,7 @@ def delete_board(board_sn: int, db: Session = Depends(get_db), user_sn = Depends
 
 @router.get("/", response_model=ResponseModel)
 def get_list_boards(page: int = 1, limit: int = 10, sort_flag: bool = False, db: Session = Depends(get_db), user_sn = Depends(get_user_sn)):
+    """sort_flog를 파라미터로 받아 총 게시글기준 정렬 여부를 결정한다."""
     logger.info(f"user: {user_sn}")
     boards = read_list_boards(db, user_sn, sort_flag, page=page, limit=limit)
     return JSONResponse(

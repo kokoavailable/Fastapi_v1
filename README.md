@@ -95,51 +95,32 @@ websockets==12.0
 ```
 ├── Dockerfile
 ├── README.md
-├── __pycache__
-│   ├── main.cpython-311.pyc
-│   └── main.cpython-312.pyc
 ├── api
 │   ├── v1
 │   │   ├── __pycache__
-│   │   │   ├── boards.cpython-312.pyc
-│   │   │   ├── posts.cpython-312.pyc
-│   │   │   └── users.cpython-312.pyc
 │   │   ├── boards.py
 │   │   ├── posts.py
 │   │   └── users.py
 │   └── v2
 ├── common
 │   ├── __pycache__
-│   │   ├── dependencies.cpython-312.pyc
-│   │   └── utils.cpython-312.pyc
 │   ├── config.ini
 │   ├── dependencies.py
 │   └── utils.py
 ├── crud
 │   ├── __pycache__
-│   │   ├── boards.cpython-312.pyc
-│   │   ├── posts.cpython-312.pyc
-│   │   └── users.cpython-312.pyc
 │   ├── boards.py
 │   ├── posts.py
 │   └── users.py
 ├── docker-compose.yml
 ├── main.py
 ├── model
-│   ├── __pycache__
-│   │   └── model.cpython-312.pyc
 │   └── model.py
 ├── requirements.txt
 ├── router
-│   ├── __pycache__
-│   │   └── router.cpython-312.pyc
 │   └── router.py
 ├── scheme
 │   ├── __pycache__
-│   │   ├── boards.cpython-312.pyc
-│   │   ├── common.cpython-312.pyc
-│   │   ├── posts.cpython-312.pyc
-│   │   └── users.cpython-312.pyc
 │   ├── boards.py
 │   ├── common.py
 │   ├── posts.py
@@ -147,11 +128,6 @@ websockets==12.0
 ├── test.db
 └── tests
     ├── __pycache__
-    │   ├── conftest.cpython-312-pytest-8.2.1.pyc
-    │   ├── test_board.cpython-312-pytest-8.2.1.pyc
-    │   ├── test_common.cpython-312-pytest-8.2.1.pyc
-    │   ├── test_post.cpython-312-pytest-8.2.1.pyc
-    │   └── test_user.cpython-312-pytest-8.2.1.pyc
     ├── conftest.py
     ├── test_api
     │   ├── test_board.py

@@ -14,9 +14,9 @@ pytest 사용한 테스트 코드 작성하였다. (미완)
 의존성관련된 모듈과 공통적으로 재사용되는 모듈들을 common 디렉토리에 작성하였다.
 
 api(엔드 포인트), router, crud(db operation), scheme(pydantic), model(sqlalchemy)로 디렉토리 구조를 나누었다.
-
-<br>
 ---------------------------
+<br>
+
 ### requirements.txt
 
 annotated-types==0.7.0
@@ -74,9 +74,8 @@ uvicorn==0.29.0
 uvloop==0.19.0
 watchfiles==0.22.0
 websockets==12.0
-
-<br>
 ---------------------------
+<br>
 ### 디렉토리 트리
 
 ```
@@ -125,9 +124,8 @@ websockets==12.0
         └── test_queries
             └── test_tables.py
 ```
-
-<br>
 ---------------------------
+<br>
 ### 개발 기간
 
 2024.05.27~2024.05.31
@@ -143,9 +141,9 @@ pip install -r requirements.txt
 ```
 uvicorn main:app
 ```
-
-<br>
 ---------------------------
+<br>
+
 ### 도커 이미지 생성
 
 ```

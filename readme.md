@@ -14,6 +14,8 @@ pytest 사용한 테스트 코드 작성하였다. (미완)
 
 api(엔드 포인트), router, crud(db operation), scheme(pydantic), model(sqlalchemy)로 디렉토리 구조를 나누었다.
 
+<br>
+
 ### requirements.txt
 
 annotated-types==0.7.0

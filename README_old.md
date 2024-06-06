@@ -1,4 +1,7 @@
-# 앨리스 채용 미니 프로젝트입니다!
+Fast api 리팩토링 & 공부 !!
+
+📍 references 
+https://github.com/kokoavailable/fastapi-realworld-example-app/blob/master/app/core/settings/app.py
 
 <br>
 

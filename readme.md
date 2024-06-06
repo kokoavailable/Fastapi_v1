@@ -1,4 +1,18 @@
+### About
+
 !!! 트랜잭션 스크립트 패턴을 통해 작성 되었습니다. fast api의 기본 기능만을 사용하여 구현 되었습니다. <br> 
+
+Access 토큰 발행에 uuid4 사용하였다.
+
+swagger, postman 사용하여 성공 실패 테스트 케이스별 api테스트 진행 하였다.
+
+pytest 사용한 테스트 코드 작성하였다. (미완)
+
+개발기(docker)와 로컬 실행환경에서의 설정 참조를 분리하였다.
+
+의존성관련된 모듈과 공통적으로 재사용되는 모듈들을 common 디렉토리에 작성하였다.
+
+api(엔드 포인트), router, crud(db operation), scheme(pydantic), model(sqlalchemy)로 디렉토리 구조를 나누었다.
 
 ### requirements.txt
 
@@ -114,18 +128,6 @@ websockets==12.0
 ### 개발 기간
 
 2024.05.27~2024.05.31
-
-Access 토큰 발행에 uuid4 사용하였다.
-
-swagger, postman 사용하여 성공 실패 테스트 케이스별 api테스트 진행 하였다.
-
-pytest 사용한 테스트 코드 작성하였다. (미완)
-
-개발기(docker)와 로컬 실행환경에서의 설정 참조를 분리하였다.
-
-의존성관련된 모듈과 공통적으로 재사용되는 모듈들을 common 디렉토리에 작성하였다.
-
-api(엔드 포인트), router, crud(db operation), scheme(pydantic), model(sqlalchemy)로 디렉토리 구조를 나누었다.
 
 <br>
 

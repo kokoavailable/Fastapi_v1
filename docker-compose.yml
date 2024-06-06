@@ -25,7 +25,7 @@ services:
             - RDB_HOST=postgres # 서비스명
             - RDB_PORT=5432
             - RDB_NAME=developer
-            - SECRET_KEY=
+            - SECRET_KEY=86568bc5f67e52396bc7e7ce67789e6e50aaeb3951f7ef0692d546f7f9439aae
             - REDIS_HOST=redis # 서비스 명
             - REDIS_PORT=6379
       ports:

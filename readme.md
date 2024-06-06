@@ -1,5 +1,7 @@
 ### About
 ---------------------------
+트랜잭션 스크립트 패턴을 사용하여 작성된 기본 crud서버.
+
 Access 토큰 발행에 uuid4 사용하였다.
 
 swagger, postman 사용하여 성공 실패 테스트 케이스별 api테스트 진행 하였다.
@@ -11,8 +13,6 @@ pytest 사용한 테스트 코드 작성하였다. (미완)
 의존성관련된 모듈과 공통적으로 재사용되는 모듈들을 common 디렉토리에 작성하였다.
 
 api(엔드 포인트), router, crud(db operation), scheme(pydantic), model(sqlalchemy)로 디렉토리 구조를 나누었다.
-
-트랜잭션 스크립트 패턴을 사용하여 작성된 기본 crud서버.
 <br>
 
 ### requirements.txt

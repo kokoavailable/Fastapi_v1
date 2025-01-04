@@ -67,26 +67,15 @@ logger = setup_logging()
 
 ##### ORM 및 REDIS 설정 불러오기
 # ORM
-if app_env == 'LOCAL':
-    rdb_user = config.get(app_env, 'RDB_USER')
-    rdb_password = quote(config.get(app_env, 'RDB_PASSWORD'))
-    rdb_host = config.get(app_env, 'RDB_HOST')
-    rdb_port = config.get(app_env, 'RDB_PORT')
-    rdb_name = config.get(app_env, 'RDB_NAME')
-elif app_env == 'DEV':
-    rdb_user = config.get(app_env, 'RDB_USER')
-    rdb_password = config.get(app_env, 'RDB_PASSWORD')
-    rdb_host = config.get(app_env, 'RDB_HOST')
-    rdb_port = config.get(app_env, 'RDB_PORT')
-    rdb_name = config.get(app_env, 'RDB_NAME')
+rdb_user = config.get(app_env, 'RDB_USER')
+rdb_password = config.get(app_env, 'RDB_PASSWORD')
+rdb_host = config.get(app_env, 'RDB_HOST')
+rdb_port = config.get(app_env, 'RDB_PORT')
+rdb_name = config.get(app_env, 'RDB_NAME')
 
 # Redis 설정
-if app_env == 'LOCAL':
-    redis_host = config.get(app_env, 'REDIS_HOST')
-    redis_port = config.get(app_env, 'REDIS_PORT')
-else:
-    redis_host = os.getenv('REDIS_HOST')
-    redis_port = os.getenv('REDIS_PORT')
+redis_host = config.get(app_env, 'REDIS_HOST')
+redis_port = config.get(app_env, 'REDIS_PORT')
 
 
 ##### 동기 ORM session 및 redis
